@@ -1,0 +1,1972 @@
+body {
+  background-color: #111;
+}
+
+.centered, .case, .clock, .hour, .minute, .second, .second:after, .dot, .ticks span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.case {
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  border: 20px solid #eee;
+}
+
+.clock {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+}
+
+.hour {
+  height: 25%;
+  margin-left: -3px;
+  border-left: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  transform-origin: 50% 0%;
+  transform: rotate(0deg);
+}
+
+.minute {
+  height: 35%;
+  margin-left: -2px;
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  transform-origin: 50% 0%;
+  transform: rotate(0deg);
+}
+
+.second {
+  height: 35%;
+  margin-left: -1px;
+  border-left: 1px solid #FFCD00;
+  border-right: 1px solid #FFCD00;
+  transform-origin: 50% 0%;
+  transform: rotate(0deg);
+}
+
+.second:after {
+  content: " ";
+  top: -20px;
+  border-left: 5px solid #FFCD00;
+  border-bottom: 15px solid #FFCD00;
+  border-top: 15px solid #FFCD00;
+  border-radius: 25% 25% 0px 0px;
+}
+
+.dot {
+  background-color: #000;
+  height: 5px;
+  width: 5px;
+  border: 10px solid #FFCD00;
+  border-radius: 50%;
+}
+
+.ticks span {
+  border-top: 2px solid #fff;
+  width: 20px;
+  transform: rotate(0deg);
+  left: calc(50% - 10px);
+}
+.ticks span:nth-child(1) {
+  transform: rotate(6deg) translateX(280px);
+}
+.ticks span:nth-child(2) {
+  transform: rotate(12deg) translateX(280px);
+}
+.ticks span:nth-child(3) {
+  transform: rotate(18deg) translateX(280px);
+}
+.ticks span:nth-child(4) {
+  transform: rotate(24deg) translateX(280px);
+}
+.ticks span:nth-child(5) {
+  transform: rotate(30deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(6) {
+  transform: rotate(36deg) translateX(280px);
+}
+.ticks span:nth-child(7) {
+  transform: rotate(42deg) translateX(280px);
+}
+.ticks span:nth-child(8) {
+  transform: rotate(48deg) translateX(280px);
+}
+.ticks span:nth-child(9) {
+  transform: rotate(54deg) translateX(280px);
+}
+.ticks span:nth-child(10) {
+  transform: rotate(60deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(11) {
+  transform: rotate(66deg) translateX(280px);
+}
+.ticks span:nth-child(12) {
+  transform: rotate(72deg) translateX(280px);
+}
+.ticks span:nth-child(13) {
+  transform: rotate(78deg) translateX(280px);
+}
+.ticks span:nth-child(14) {
+  transform: rotate(84deg) translateX(280px);
+}
+.ticks span:nth-child(15) {
+  transform: rotate(90deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(16) {
+  transform: rotate(96deg) translateX(280px);
+}
+.ticks span:nth-child(17) {
+  transform: rotate(102deg) translateX(280px);
+}
+.ticks span:nth-child(18) {
+  transform: rotate(108deg) translateX(280px);
+}
+.ticks span:nth-child(19) {
+  transform: rotate(114deg) translateX(280px);
+}
+.ticks span:nth-child(20) {
+  transform: rotate(120deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(21) {
+  transform: rotate(126deg) translateX(280px);
+}
+.ticks span:nth-child(22) {
+  transform: rotate(132deg) translateX(280px);
+}
+.ticks span:nth-child(23) {
+  transform: rotate(138deg) translateX(280px);
+}
+.ticks span:nth-child(24) {
+  transform: rotate(144deg) translateX(280px);
+}
+.ticks span:nth-child(25) {
+  transform: rotate(150deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(26) {
+  transform: rotate(156deg) translateX(280px);
+}
+.ticks span:nth-child(27) {
+  transform: rotate(162deg) translateX(280px);
+}
+.ticks span:nth-child(28) {
+  transform: rotate(168deg) translateX(280px);
+}
+.ticks span:nth-child(29) {
+  transform: rotate(174deg) translateX(280px);
+}
+.ticks span:nth-child(30) {
+  transform: rotate(180deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(31) {
+  transform: rotate(186deg) translateX(280px);
+}
+.ticks span:nth-child(32) {
+  transform: rotate(192deg) translateX(280px);
+}
+.ticks span:nth-child(33) {
+  transform: rotate(198deg) translateX(280px);
+}
+.ticks span:nth-child(34) {
+  transform: rotate(204deg) translateX(280px);
+}
+.ticks span:nth-child(35) {
+  transform: rotate(210deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(36) {
+  transform: rotate(216deg) translateX(280px);
+}
+.ticks span:nth-child(37) {
+  transform: rotate(222deg) translateX(280px);
+}
+.ticks span:nth-child(38) {
+  transform: rotate(228deg) translateX(280px);
+}
+.ticks span:nth-child(39) {
+  transform: rotate(234deg) translateX(280px);
+}
+.ticks span:nth-child(40) {
+  transform: rotate(240deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(41) {
+  transform: rotate(246deg) translateX(280px);
+}
+.ticks span:nth-child(42) {
+  transform: rotate(252deg) translateX(280px);
+}
+.ticks span:nth-child(43) {
+  transform: rotate(258deg) translateX(280px);
+}
+.ticks span:nth-child(44) {
+  transform: rotate(264deg) translateX(280px);
+}
+.ticks span:nth-child(45) {
+  transform: rotate(270deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(46) {
+  transform: rotate(276deg) translateX(280px);
+}
+.ticks span:nth-child(47) {
+  transform: rotate(282deg) translateX(280px);
+}
+.ticks span:nth-child(48) {
+  transform: rotate(288deg) translateX(280px);
+}
+.ticks span:nth-child(49) {
+  transform: rotate(294deg) translateX(280px);
+}
+.ticks span:nth-child(50) {
+  transform: rotate(300deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(51) {
+  transform: rotate(306deg) translateX(280px);
+}
+.ticks span:nth-child(52) {
+  transform: rotate(312deg) translateX(280px);
+}
+.ticks span:nth-child(53) {
+  transform: rotate(318deg) translateX(280px);
+}
+.ticks span:nth-child(54) {
+  transform: rotate(324deg) translateX(280px);
+}
+.ticks span:nth-child(55) {
+  transform: rotate(330deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+.ticks span:nth-child(56) {
+  transform: rotate(336deg) translateX(280px);
+}
+.ticks span:nth-child(57) {
+  transform: rotate(342deg) translateX(280px);
+}
+.ticks span:nth-child(58) {
+  transform: rotate(348deg) translateX(280px);
+}
+.ticks span:nth-child(59) {
+  transform: rotate(354deg) translateX(280px);
+}
+.ticks span:nth-child(60) {
+  transform: rotate(360deg) translateX(280px);
+  border-top-width: 5px;
+  margin-left: -5px;
+  width: 30px;
+}
+
+@keyframes animate-hand-0 {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes animate-hour-hand-0 {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.second-0 {
+  animation: animate-hand-0 60s linear infinite;
+}
+
+.minute-0 {
+  animation: animate-hand-0 3600s linear infinite;
+}
+
+.hour-0 {
+  animation: animate-hour-hand-0 86400s linear infinite;
+}
+
+@keyframes animate-hand-1 {
+  from {
+    transform: rotate(-174deg);
+  }
+  to {
+    transform: rotate(186deg);
+  }
+}
+@keyframes animate-hour-hand-1 {
+  from {
+    transform: rotate(-150deg);
+  }
+  to {
+    transform: rotate(210deg);
+  }
+}
+.second-1 {
+  animation: animate-hand-1 60s linear infinite;
+}
+
+.minute-1 {
+  animation: animate-hand-1 3600s linear infinite;
+}
+
+.hour-1 {
+  animation: animate-hour-hand-1 86400s linear infinite;
+}
+
+@keyframes animate-hand-2 {
+  from {
+    transform: rotate(-168deg);
+  }
+  to {
+    transform: rotate(192deg);
+  }
+}
+@keyframes animate-hour-hand-2 {
+  from {
+    transform: rotate(-120deg);
+  }
+  to {
+    transform: rotate(240deg);
+  }
+}
+.second-2 {
+  animation: animate-hand-2 60s linear infinite;
+}
+
+.minute-2 {
+  animation: animate-hand-2 3600s linear infinite;
+}
+
+.hour-2 {
+  animation: animate-hour-hand-2 86400s linear infinite;
+}
+
+@keyframes animate-hand-3 {
+  from {
+    transform: rotate(-162deg);
+  }
+  to {
+    transform: rotate(198deg);
+  }
+}
+@keyframes animate-hour-hand-3 {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+.second-3 {
+  animation: animate-hand-3 60s linear infinite;
+}
+
+.minute-3 {
+  animation: animate-hand-3 3600s linear infinite;
+}
+
+.hour-3 {
+  animation: animate-hour-hand-3 86400s linear infinite;
+}
+
+@keyframes animate-hand-4 {
+  from {
+    transform: rotate(-156deg);
+  }
+  to {
+    transform: rotate(204deg);
+  }
+}
+@keyframes animate-hour-hand-4 {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(300deg);
+  }
+}
+.second-4 {
+  animation: animate-hand-4 60s linear infinite;
+}
+
+.minute-4 {
+  animation: animate-hand-4 3600s linear infinite;
+}
+
+.hour-4 {
+  animation: animate-hour-hand-4 86400s linear infinite;
+}
+
+@keyframes animate-hand-5 {
+  from {
+    transform: rotate(-150deg);
+  }
+  to {
+    transform: rotate(210deg);
+  }
+}
+@keyframes animate-hour-hand-5 {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(330deg);
+  }
+}
+.second-5 {
+  animation: animate-hand-5 60s linear infinite;
+}
+
+.minute-5 {
+  animation: animate-hand-5 3600s linear infinite;
+}
+
+.hour-5 {
+  animation: animate-hour-hand-5 86400s linear infinite;
+}
+
+@keyframes animate-hand-6 {
+  from {
+    transform: rotate(-144deg);
+  }
+  to {
+    transform: rotate(216deg);
+  }
+}
+@keyframes animate-hour-hand-6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.second-6 {
+  animation: animate-hand-6 60s linear infinite;
+}
+
+.minute-6 {
+  animation: animate-hand-6 3600s linear infinite;
+}
+
+.hour-6 {
+  animation: animate-hour-hand-6 86400s linear infinite;
+}
+
+@keyframes animate-hand-7 {
+  from {
+    transform: rotate(-138deg);
+  }
+  to {
+    transform: rotate(222deg);
+  }
+}
+@keyframes animate-hour-hand-7 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(390deg);
+  }
+}
+.second-7 {
+  animation: animate-hand-7 60s linear infinite;
+}
+
+.minute-7 {
+  animation: animate-hand-7 3600s linear infinite;
+}
+
+.hour-7 {
+  animation: animate-hour-hand-7 86400s linear infinite;
+}
+
+@keyframes animate-hand-8 {
+  from {
+    transform: rotate(-132deg);
+  }
+  to {
+    transform: rotate(228deg);
+  }
+}
+@keyframes animate-hour-hand-8 {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(420deg);
+  }
+}
+.second-8 {
+  animation: animate-hand-8 60s linear infinite;
+}
+
+.minute-8 {
+  animation: animate-hand-8 3600s linear infinite;
+}
+
+.hour-8 {
+  animation: animate-hour-hand-8 86400s linear infinite;
+}
+
+@keyframes animate-hand-9 {
+  from {
+    transform: rotate(-126deg);
+  }
+  to {
+    transform: rotate(234deg);
+  }
+}
+@keyframes animate-hour-hand-9 {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+.second-9 {
+  animation: animate-hand-9 60s linear infinite;
+}
+
+.minute-9 {
+  animation: animate-hand-9 3600s linear infinite;
+}
+
+.hour-9 {
+  animation: animate-hour-hand-9 86400s linear infinite;
+}
+
+@keyframes animate-hand-10 {
+  from {
+    transform: rotate(-120deg);
+  }
+  to {
+    transform: rotate(240deg);
+  }
+}
+@keyframes animate-hour-hand-10 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+.second-10 {
+  animation: animate-hand-10 60s linear infinite;
+}
+
+.minute-10 {
+  animation: animate-hand-10 3600s linear infinite;
+}
+
+.hour-10 {
+  animation: animate-hour-hand-10 86400s linear infinite;
+}
+
+@keyframes animate-hand-11 {
+  from {
+    transform: rotate(-114deg);
+  }
+  to {
+    transform: rotate(246deg);
+  }
+}
+@keyframes animate-hour-hand-11 {
+  from {
+    transform: rotate(150deg);
+  }
+  to {
+    transform: rotate(510deg);
+  }
+}
+.second-11 {
+  animation: animate-hand-11 60s linear infinite;
+}
+
+.minute-11 {
+  animation: animate-hand-11 3600s linear infinite;
+}
+
+.hour-11 {
+  animation: animate-hour-hand-11 86400s linear infinite;
+}
+
+@keyframes animate-hand-12 {
+  from {
+    transform: rotate(-108deg);
+  }
+  to {
+    transform: rotate(252deg);
+  }
+}
+@keyframes animate-hour-hand-12 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+.second-12 {
+  animation: animate-hand-12 60s linear infinite;
+}
+
+.minute-12 {
+  animation: animate-hand-12 3600s linear infinite;
+}
+
+.hour-12 {
+  animation: animate-hour-hand-12 86400s linear infinite;
+}
+
+@keyframes animate-hand-13 {
+  from {
+    transform: rotate(-102deg);
+  }
+  to {
+    transform: rotate(258deg);
+  }
+}
+@keyframes animate-hour-hand-13 {
+  from {
+    transform: rotate(210deg);
+  }
+  to {
+    transform: rotate(570deg);
+  }
+}
+.second-13 {
+  animation: animate-hand-13 60s linear infinite;
+}
+
+.minute-13 {
+  animation: animate-hand-13 3600s linear infinite;
+}
+
+.hour-13 {
+  animation: animate-hour-hand-13 86400s linear infinite;
+}
+
+@keyframes animate-hand-14 {
+  from {
+    transform: rotate(-96deg);
+  }
+  to {
+    transform: rotate(264deg);
+  }
+}
+@keyframes animate-hour-hand-14 {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+.second-14 {
+  animation: animate-hand-14 60s linear infinite;
+}
+
+.minute-14 {
+  animation: animate-hand-14 3600s linear infinite;
+}
+
+.hour-14 {
+  animation: animate-hour-hand-14 86400s linear infinite;
+}
+
+@keyframes animate-hand-15 {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+@keyframes animate-hour-hand-15 {
+  from {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(630deg);
+  }
+}
+.second-15 {
+  animation: animate-hand-15 60s linear infinite;
+}
+
+.minute-15 {
+  animation: animate-hand-15 3600s linear infinite;
+}
+
+.hour-15 {
+  animation: animate-hour-hand-15 86400s linear infinite;
+}
+
+@keyframes animate-hand-16 {
+  from {
+    transform: rotate(-84deg);
+  }
+  to {
+    transform: rotate(276deg);
+  }
+}
+@keyframes animate-hour-hand-16 {
+  from {
+    transform: rotate(300deg);
+  }
+  to {
+    transform: rotate(660deg);
+  }
+}
+.second-16 {
+  animation: animate-hand-16 60s linear infinite;
+}
+
+.minute-16 {
+  animation: animate-hand-16 3600s linear infinite;
+}
+
+.hour-16 {
+  animation: animate-hour-hand-16 86400s linear infinite;
+}
+
+@keyframes animate-hand-17 {
+  from {
+    transform: rotate(-78deg);
+  }
+  to {
+    transform: rotate(282deg);
+  }
+}
+@keyframes animate-hour-hand-17 {
+  from {
+    transform: rotate(330deg);
+  }
+  to {
+    transform: rotate(690deg);
+  }
+}
+.second-17 {
+  animation: animate-hand-17 60s linear infinite;
+}
+
+.minute-17 {
+  animation: animate-hand-17 3600s linear infinite;
+}
+
+.hour-17 {
+  animation: animate-hour-hand-17 86400s linear infinite;
+}
+
+@keyframes animate-hand-18 {
+  from {
+    transform: rotate(-72deg);
+  }
+  to {
+    transform: rotate(288deg);
+  }
+}
+@keyframes animate-hour-hand-18 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+.second-18 {
+  animation: animate-hand-18 60s linear infinite;
+}
+
+.minute-18 {
+  animation: animate-hand-18 3600s linear infinite;
+}
+
+.hour-18 {
+  animation: animate-hour-hand-18 86400s linear infinite;
+}
+
+@keyframes animate-hand-19 {
+  from {
+    transform: rotate(-66deg);
+  }
+  to {
+    transform: rotate(294deg);
+  }
+}
+@keyframes animate-hour-hand-19 {
+  from {
+    transform: rotate(390deg);
+  }
+  to {
+    transform: rotate(750deg);
+  }
+}
+.second-19 {
+  animation: animate-hand-19 60s linear infinite;
+}
+
+.minute-19 {
+  animation: animate-hand-19 3600s linear infinite;
+}
+
+.hour-19 {
+  animation: animate-hour-hand-19 86400s linear infinite;
+}
+
+@keyframes animate-hand-20 {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(300deg);
+  }
+}
+@keyframes animate-hour-hand-20 {
+  from {
+    transform: rotate(420deg);
+  }
+  to {
+    transform: rotate(780deg);
+  }
+}
+.second-20 {
+  animation: animate-hand-20 60s linear infinite;
+}
+
+.minute-20 {
+  animation: animate-hand-20 3600s linear infinite;
+}
+
+.hour-20 {
+  animation: animate-hour-hand-20 86400s linear infinite;
+}
+
+@keyframes animate-hand-21 {
+  from {
+    transform: rotate(-54deg);
+  }
+  to {
+    transform: rotate(306deg);
+  }
+}
+@keyframes animate-hour-hand-21 {
+  from {
+    transform: rotate(450deg);
+  }
+  to {
+    transform: rotate(810deg);
+  }
+}
+.second-21 {
+  animation: animate-hand-21 60s linear infinite;
+}
+
+.minute-21 {
+  animation: animate-hand-21 3600s linear infinite;
+}
+
+.hour-21 {
+  animation: animate-hour-hand-21 86400s linear infinite;
+}
+
+@keyframes animate-hand-22 {
+  from {
+    transform: rotate(-48deg);
+  }
+  to {
+    transform: rotate(312deg);
+  }
+}
+@keyframes animate-hour-hand-22 {
+  from {
+    transform: rotate(480deg);
+  }
+  to {
+    transform: rotate(840deg);
+  }
+}
+.second-22 {
+  animation: animate-hand-22 60s linear infinite;
+}
+
+.minute-22 {
+  animation: animate-hand-22 3600s linear infinite;
+}
+
+.hour-22 {
+  animation: animate-hour-hand-22 86400s linear infinite;
+}
+
+@keyframes animate-hand-23 {
+  from {
+    transform: rotate(-42deg);
+  }
+  to {
+    transform: rotate(318deg);
+  }
+}
+@keyframes animate-hour-hand-23 {
+  from {
+    transform: rotate(510deg);
+  }
+  to {
+    transform: rotate(870deg);
+  }
+}
+.second-23 {
+  animation: animate-hand-23 60s linear infinite;
+}
+
+.minute-23 {
+  animation: animate-hand-23 3600s linear infinite;
+}
+
+.hour-23 {
+  animation: animate-hour-hand-23 86400s linear infinite;
+}
+
+@keyframes animate-hand-24 {
+  from {
+    transform: rotate(-36deg);
+  }
+  to {
+    transform: rotate(324deg);
+  }
+}
+@keyframes animate-hour-hand-24 {
+  from {
+    transform: rotate(540deg);
+  }
+  to {
+    transform: rotate(900deg);
+  }
+}
+.second-24 {
+  animation: animate-hand-24 60s linear infinite;
+}
+
+.minute-24 {
+  animation: animate-hand-24 3600s linear infinite;
+}
+
+.hour-24 {
+  animation: animate-hour-hand-24 86400s linear infinite;
+}
+
+@keyframes animate-hand-25 {
+  from {
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(330deg);
+  }
+}
+@keyframes animate-hour-hand-25 {
+  from {
+    transform: rotate(570deg);
+  }
+  to {
+    transform: rotate(930deg);
+  }
+}
+.second-25 {
+  animation: animate-hand-25 60s linear infinite;
+}
+
+.minute-25 {
+  animation: animate-hand-25 3600s linear infinite;
+}
+
+.hour-25 {
+  animation: animate-hour-hand-25 86400s linear infinite;
+}
+
+@keyframes animate-hand-26 {
+  from {
+    transform: rotate(-24deg);
+  }
+  to {
+    transform: rotate(336deg);
+  }
+}
+@keyframes animate-hour-hand-26 {
+  from {
+    transform: rotate(600deg);
+  }
+  to {
+    transform: rotate(960deg);
+  }
+}
+.second-26 {
+  animation: animate-hand-26 60s linear infinite;
+}
+
+.minute-26 {
+  animation: animate-hand-26 3600s linear infinite;
+}
+
+.hour-26 {
+  animation: animate-hour-hand-26 86400s linear infinite;
+}
+
+@keyframes animate-hand-27 {
+  from {
+    transform: rotate(-18deg);
+  }
+  to {
+    transform: rotate(342deg);
+  }
+}
+@keyframes animate-hour-hand-27 {
+  from {
+    transform: rotate(630deg);
+  }
+  to {
+    transform: rotate(990deg);
+  }
+}
+.second-27 {
+  animation: animate-hand-27 60s linear infinite;
+}
+
+.minute-27 {
+  animation: animate-hand-27 3600s linear infinite;
+}
+
+.hour-27 {
+  animation: animate-hour-hand-27 86400s linear infinite;
+}
+
+@keyframes animate-hand-28 {
+  from {
+    transform: rotate(-12deg);
+  }
+  to {
+    transform: rotate(348deg);
+  }
+}
+@keyframes animate-hour-hand-28 {
+  from {
+    transform: rotate(660deg);
+  }
+  to {
+    transform: rotate(1020deg);
+  }
+}
+.second-28 {
+  animation: animate-hand-28 60s linear infinite;
+}
+
+.minute-28 {
+  animation: animate-hand-28 3600s linear infinite;
+}
+
+.hour-28 {
+  animation: animate-hour-hand-28 86400s linear infinite;
+}
+
+@keyframes animate-hand-29 {
+  from {
+    transform: rotate(-6deg);
+  }
+  to {
+    transform: rotate(354deg);
+  }
+}
+@keyframes animate-hour-hand-29 {
+  from {
+    transform: rotate(690deg);
+  }
+  to {
+    transform: rotate(1050deg);
+  }
+}
+.second-29 {
+  animation: animate-hand-29 60s linear infinite;
+}
+
+.minute-29 {
+  animation: animate-hand-29 3600s linear infinite;
+}
+
+.hour-29 {
+  animation: animate-hour-hand-29 86400s linear infinite;
+}
+
+@keyframes animate-hand-30 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-hour-hand-30 {
+  from {
+    transform: rotate(720deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+}
+.second-30 {
+  animation: animate-hand-30 60s linear infinite;
+}
+
+.minute-30 {
+  animation: animate-hand-30 3600s linear infinite;
+}
+
+.hour-30 {
+  animation: animate-hour-hand-30 86400s linear infinite;
+}
+
+@keyframes animate-hand-31 {
+  from {
+    transform: rotate(6deg);
+  }
+  to {
+    transform: rotate(366deg);
+  }
+}
+@keyframes animate-hour-hand-31 {
+  from {
+    transform: rotate(750deg);
+  }
+  to {
+    transform: rotate(1110deg);
+  }
+}
+.second-31 {
+  animation: animate-hand-31 60s linear infinite;
+}
+
+.minute-31 {
+  animation: animate-hand-31 3600s linear infinite;
+}
+
+.hour-31 {
+  animation: animate-hour-hand-31 86400s linear infinite;
+}
+
+@keyframes animate-hand-32 {
+  from {
+    transform: rotate(12deg);
+  }
+  to {
+    transform: rotate(372deg);
+  }
+}
+@keyframes animate-hour-hand-32 {
+  from {
+    transform: rotate(780deg);
+  }
+  to {
+    transform: rotate(1140deg);
+  }
+}
+.second-32 {
+  animation: animate-hand-32 60s linear infinite;
+}
+
+.minute-32 {
+  animation: animate-hand-32 3600s linear infinite;
+}
+
+.hour-32 {
+  animation: animate-hour-hand-32 86400s linear infinite;
+}
+
+@keyframes animate-hand-33 {
+  from {
+    transform: rotate(18deg);
+  }
+  to {
+    transform: rotate(378deg);
+  }
+}
+@keyframes animate-hour-hand-33 {
+  from {
+    transform: rotate(810deg);
+  }
+  to {
+    transform: rotate(1170deg);
+  }
+}
+.second-33 {
+  animation: animate-hand-33 60s linear infinite;
+}
+
+.minute-33 {
+  animation: animate-hand-33 3600s linear infinite;
+}
+
+.hour-33 {
+  animation: animate-hour-hand-33 86400s linear infinite;
+}
+
+@keyframes animate-hand-34 {
+  from {
+    transform: rotate(24deg);
+  }
+  to {
+    transform: rotate(384deg);
+  }
+}
+@keyframes animate-hour-hand-34 {
+  from {
+    transform: rotate(840deg);
+  }
+  to {
+    transform: rotate(1200deg);
+  }
+}
+.second-34 {
+  animation: animate-hand-34 60s linear infinite;
+}
+
+.minute-34 {
+  animation: animate-hand-34 3600s linear infinite;
+}
+
+.hour-34 {
+  animation: animate-hour-hand-34 86400s linear infinite;
+}
+
+@keyframes animate-hand-35 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(390deg);
+  }
+}
+@keyframes animate-hour-hand-35 {
+  from {
+    transform: rotate(870deg);
+  }
+  to {
+    transform: rotate(1230deg);
+  }
+}
+.second-35 {
+  animation: animate-hand-35 60s linear infinite;
+}
+
+.minute-35 {
+  animation: animate-hand-35 3600s linear infinite;
+}
+
+.hour-35 {
+  animation: animate-hour-hand-35 86400s linear infinite;
+}
+
+@keyframes animate-hand-36 {
+  from {
+    transform: rotate(36deg);
+  }
+  to {
+    transform: rotate(396deg);
+  }
+}
+@keyframes animate-hour-hand-36 {
+  from {
+    transform: rotate(900deg);
+  }
+  to {
+    transform: rotate(1260deg);
+  }
+}
+.second-36 {
+  animation: animate-hand-36 60s linear infinite;
+}
+
+.minute-36 {
+  animation: animate-hand-36 3600s linear infinite;
+}
+
+.hour-36 {
+  animation: animate-hour-hand-36 86400s linear infinite;
+}
+
+@keyframes animate-hand-37 {
+  from {
+    transform: rotate(42deg);
+  }
+  to {
+    transform: rotate(402deg);
+  }
+}
+@keyframes animate-hour-hand-37 {
+  from {
+    transform: rotate(930deg);
+  }
+  to {
+    transform: rotate(1290deg);
+  }
+}
+.second-37 {
+  animation: animate-hand-37 60s linear infinite;
+}
+
+.minute-37 {
+  animation: animate-hand-37 3600s linear infinite;
+}
+
+.hour-37 {
+  animation: animate-hour-hand-37 86400s linear infinite;
+}
+
+@keyframes animate-hand-38 {
+  from {
+    transform: rotate(48deg);
+  }
+  to {
+    transform: rotate(408deg);
+  }
+}
+@keyframes animate-hour-hand-38 {
+  from {
+    transform: rotate(960deg);
+  }
+  to {
+    transform: rotate(1320deg);
+  }
+}
+.second-38 {
+  animation: animate-hand-38 60s linear infinite;
+}
+
+.minute-38 {
+  animation: animate-hand-38 3600s linear infinite;
+}
+
+.hour-38 {
+  animation: animate-hour-hand-38 86400s linear infinite;
+}
+
+@keyframes animate-hand-39 {
+  from {
+    transform: rotate(54deg);
+  }
+  to {
+    transform: rotate(414deg);
+  }
+}
+@keyframes animate-hour-hand-39 {
+  from {
+    transform: rotate(990deg);
+  }
+  to {
+    transform: rotate(1350deg);
+  }
+}
+.second-39 {
+  animation: animate-hand-39 60s linear infinite;
+}
+
+.minute-39 {
+  animation: animate-hand-39 3600s linear infinite;
+}
+
+.hour-39 {
+  animation: animate-hour-hand-39 86400s linear infinite;
+}
+
+@keyframes animate-hand-40 {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(420deg);
+  }
+}
+@keyframes animate-hour-hand-40 {
+  from {
+    transform: rotate(1020deg);
+  }
+  to {
+    transform: rotate(1380deg);
+  }
+}
+.second-40 {
+  animation: animate-hand-40 60s linear infinite;
+}
+
+.minute-40 {
+  animation: animate-hand-40 3600s linear infinite;
+}
+
+.hour-40 {
+  animation: animate-hour-hand-40 86400s linear infinite;
+}
+
+@keyframes animate-hand-41 {
+  from {
+    transform: rotate(66deg);
+  }
+  to {
+    transform: rotate(426deg);
+  }
+}
+@keyframes animate-hour-hand-41 {
+  from {
+    transform: rotate(1050deg);
+  }
+  to {
+    transform: rotate(1410deg);
+  }
+}
+.second-41 {
+  animation: animate-hand-41 60s linear infinite;
+}
+
+.minute-41 {
+  animation: animate-hand-41 3600s linear infinite;
+}
+
+.hour-41 {
+  animation: animate-hour-hand-41 86400s linear infinite;
+}
+
+@keyframes animate-hand-42 {
+  from {
+    transform: rotate(72deg);
+  }
+  to {
+    transform: rotate(432deg);
+  }
+}
+@keyframes animate-hour-hand-42 {
+  from {
+    transform: rotate(1080deg);
+  }
+  to {
+    transform: rotate(1440deg);
+  }
+}
+.second-42 {
+  animation: animate-hand-42 60s linear infinite;
+}
+
+.minute-42 {
+  animation: animate-hand-42 3600s linear infinite;
+}
+
+.hour-42 {
+  animation: animate-hour-hand-42 86400s linear infinite;
+}
+
+@keyframes animate-hand-43 {
+  from {
+    transform: rotate(78deg);
+  }
+  to {
+    transform: rotate(438deg);
+  }
+}
+@keyframes animate-hour-hand-43 {
+  from {
+    transform: rotate(1110deg);
+  }
+  to {
+    transform: rotate(1470deg);
+  }
+}
+.second-43 {
+  animation: animate-hand-43 60s linear infinite;
+}
+
+.minute-43 {
+  animation: animate-hand-43 3600s linear infinite;
+}
+
+.hour-43 {
+  animation: animate-hour-hand-43 86400s linear infinite;
+}
+
+@keyframes animate-hand-44 {
+  from {
+    transform: rotate(84deg);
+  }
+  to {
+    transform: rotate(444deg);
+  }
+}
+@keyframes animate-hour-hand-44 {
+  from {
+    transform: rotate(1140deg);
+  }
+  to {
+    transform: rotate(1500deg);
+  }
+}
+.second-44 {
+  animation: animate-hand-44 60s linear infinite;
+}
+
+.minute-44 {
+  animation: animate-hand-44 3600s linear infinite;
+}
+
+.hour-44 {
+  animation: animate-hour-hand-44 86400s linear infinite;
+}
+
+@keyframes animate-hand-45 {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+@keyframes animate-hour-hand-45 {
+  from {
+    transform: rotate(1170deg);
+  }
+  to {
+    transform: rotate(1530deg);
+  }
+}
+.second-45 {
+  animation: animate-hand-45 60s linear infinite;
+}
+
+.minute-45 {
+  animation: animate-hand-45 3600s linear infinite;
+}
+
+.hour-45 {
+  animation: animate-hour-hand-45 86400s linear infinite;
+}
+
+@keyframes animate-hand-46 {
+  from {
+    transform: rotate(96deg);
+  }
+  to {
+    transform: rotate(456deg);
+  }
+}
+@keyframes animate-hour-hand-46 {
+  from {
+    transform: rotate(1200deg);
+  }
+  to {
+    transform: rotate(1560deg);
+  }
+}
+.second-46 {
+  animation: animate-hand-46 60s linear infinite;
+}
+
+.minute-46 {
+  animation: animate-hand-46 3600s linear infinite;
+}
+
+.hour-46 {
+  animation: animate-hour-hand-46 86400s linear infinite;
+}
+
+@keyframes animate-hand-47 {
+  from {
+    transform: rotate(102deg);
+  }
+  to {
+    transform: rotate(462deg);
+  }
+}
+@keyframes animate-hour-hand-47 {
+  from {
+    transform: rotate(1230deg);
+  }
+  to {
+    transform: rotate(1590deg);
+  }
+}
+.second-47 {
+  animation: animate-hand-47 60s linear infinite;
+}
+
+.minute-47 {
+  animation: animate-hand-47 3600s linear infinite;
+}
+
+.hour-47 {
+  animation: animate-hour-hand-47 86400s linear infinite;
+}
+
+@keyframes animate-hand-48 {
+  from {
+    transform: rotate(108deg);
+  }
+  to {
+    transform: rotate(468deg);
+  }
+}
+@keyframes animate-hour-hand-48 {
+  from {
+    transform: rotate(1260deg);
+  }
+  to {
+    transform: rotate(1620deg);
+  }
+}
+.second-48 {
+  animation: animate-hand-48 60s linear infinite;
+}
+
+.minute-48 {
+  animation: animate-hand-48 3600s linear infinite;
+}
+
+.hour-48 {
+  animation: animate-hour-hand-48 86400s linear infinite;
+}
+
+@keyframes animate-hand-49 {
+  from {
+    transform: rotate(114deg);
+  }
+  to {
+    transform: rotate(474deg);
+  }
+}
+@keyframes animate-hour-hand-49 {
+  from {
+    transform: rotate(1290deg);
+  }
+  to {
+    transform: rotate(1650deg);
+  }
+}
+.second-49 {
+  animation: animate-hand-49 60s linear infinite;
+}
+
+.minute-49 {
+  animation: animate-hand-49 3600s linear infinite;
+}
+
+.hour-49 {
+  animation: animate-hour-hand-49 86400s linear infinite;
+}
+
+@keyframes animate-hand-50 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+@keyframes animate-hour-hand-50 {
+  from {
+    transform: rotate(1320deg);
+  }
+  to {
+    transform: rotate(1680deg);
+  }
+}
+.second-50 {
+  animation: animate-hand-50 60s linear infinite;
+}
+
+.minute-50 {
+  animation: animate-hand-50 3600s linear infinite;
+}
+
+.hour-50 {
+  animation: animate-hour-hand-50 86400s linear infinite;
+}
+
+@keyframes animate-hand-51 {
+  from {
+    transform: rotate(126deg);
+  }
+  to {
+    transform: rotate(486deg);
+  }
+}
+@keyframes animate-hour-hand-51 {
+  from {
+    transform: rotate(1350deg);
+  }
+  to {
+    transform: rotate(1710deg);
+  }
+}
+.second-51 {
+  animation: animate-hand-51 60s linear infinite;
+}
+
+.minute-51 {
+  animation: animate-hand-51 3600s linear infinite;
+}
+
+.hour-51 {
+  animation: animate-hour-hand-51 86400s linear infinite;
+}
+
+@keyframes animate-hand-52 {
+  from {
+    transform: rotate(132deg);
+  }
+  to {
+    transform: rotate(492deg);
+  }
+}
+@keyframes animate-hour-hand-52 {
+  from {
+    transform: rotate(1380deg);
+  }
+  to {
+    transform: rotate(1740deg);
+  }
+}
+.second-52 {
+  animation: animate-hand-52 60s linear infinite;
+}
+
+.minute-52 {
+  animation: animate-hand-52 3600s linear infinite;
+}
+
+.hour-52 {
+  animation: animate-hour-hand-52 86400s linear infinite;
+}
+
+@keyframes animate-hand-53 {
+  from {
+    transform: rotate(138deg);
+  }
+  to {
+    transform: rotate(498deg);
+  }
+}
+@keyframes animate-hour-hand-53 {
+  from {
+    transform: rotate(1410deg);
+  }
+  to {
+    transform: rotate(1770deg);
+  }
+}
+.second-53 {
+  animation: animate-hand-53 60s linear infinite;
+}
+
+.minute-53 {
+  animation: animate-hand-53 3600s linear infinite;
+}
+
+.hour-53 {
+  animation: animate-hour-hand-53 86400s linear infinite;
+}
+
+@keyframes animate-hand-54 {
+  from {
+    transform: rotate(144deg);
+  }
+  to {
+    transform: rotate(504deg);
+  }
+}
+@keyframes animate-hour-hand-54 {
+  from {
+    transform: rotate(1440deg);
+  }
+  to {
+    transform: rotate(1800deg);
+  }
+}
+.second-54 {
+  animation: animate-hand-54 60s linear infinite;
+}
+
+.minute-54 {
+  animation: animate-hand-54 3600s linear infinite;
+}
+
+.hour-54 {
+  animation: animate-hour-hand-54 86400s linear infinite;
+}
+
+@keyframes animate-hand-55 {
+  from {
+    transform: rotate(150deg);
+  }
+  to {
+    transform: rotate(510deg);
+  }
+}
+@keyframes animate-hour-hand-55 {
+  from {
+    transform: rotate(1470deg);
+  }
+  to {
+    transform: rotate(1830deg);
+  }
+}
+.second-55 {
+  animation: animate-hand-55 60s linear infinite;
+}
+
+.minute-55 {
+  animation: animate-hand-55 3600s linear infinite;
+}
+
+.hour-55 {
+  animation: animate-hour-hand-55 86400s linear infinite;
+}
+
+@keyframes animate-hand-56 {
+  from {
+    transform: rotate(156deg);
+  }
+  to {
+    transform: rotate(516deg);
+  }
+}
+@keyframes animate-hour-hand-56 {
+  from {
+    transform: rotate(1500deg);
+  }
+  to {
+    transform: rotate(1860deg);
+  }
+}
+.second-56 {
+  animation: animate-hand-56 60s linear infinite;
+}
+
+.minute-56 {
+  animation: animate-hand-56 3600s linear infinite;
+}
+
+.hour-56 {
+  animation: animate-hour-hand-56 86400s linear infinite;
+}
+
+@keyframes animate-hand-57 {
+  from {
+    transform: rotate(162deg);
+  }
+  to {
+    transform: rotate(522deg);
+  }
+}
+@keyframes animate-hour-hand-57 {
+  from {
+    transform: rotate(1530deg);
+  }
+  to {
+    transform: rotate(1890deg);
+  }
+}
+.second-57 {
+  animation: animate-hand-57 60s linear infinite;
+}
+
+.minute-57 {
+  animation: animate-hand-57 3600s linear infinite;
+}
+
+.hour-57 {
+  animation: animate-hour-hand-57 86400s linear infinite;
+}
+
+@keyframes animate-hand-58 {
+  from {
+    transform: rotate(168deg);
+  }
+  to {
+    transform: rotate(528deg);
+  }
+}
+@keyframes animate-hour-hand-58 {
+  from {
+    transform: rotate(1560deg);
+  }
+  to {
+    transform: rotate(1920deg);
+  }
+}
+.second-58 {
+  animation: animate-hand-58 60s linear infinite;
+}
+
+.minute-58 {
+  animation: animate-hand-58 3600s linear infinite;
+}
+
+.hour-58 {
+  animation: animate-hour-hand-58 86400s linear infinite;
+}
+
+@keyframes animate-hand-59 {
+  from {
+    transform: rotate(174deg);
+  }
+  to {
+    transform: rotate(534deg);
+  }
+}
+@keyframes animate-hour-hand-59 {
+  from {
+    transform: rotate(1590deg);
+  }
+  to {
+    transform: rotate(1950deg);
+  }
+}
+.second-59 {
+  animation: animate-hand-59 60s linear infinite;
+}
+
+.minute-59 {
+  animation: animate-hand-59 3600s linear infinite;
+}
+
+.hour-59 {
+  animation: animate-hour-hand-59 86400s linear infinite;
+}

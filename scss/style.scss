@@ -1,0 +1,123 @@
+$bgColor: #111;
+$clockSize: 600px;
+$clockBgColor: #000;
+$caseColor: #eee;
+
+body {
+  background-color: $bgColor;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.case {
+  @extend .centered;
+  height: $clockSize;
+  width: $clockSize;
+  border-radius: 50%;
+  border: 20px solid $caseColor;
+}
+.clock {
+  @extend .centered;
+  background-color: $clockBgColor;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+}
+@mixin hand($w, $h, $c) {
+  @extend .centered;
+  height: $h;
+  margin-left: -$w;
+  border-left: $w solid $c;
+  border-right: $w solid $c;
+  transform-origin: 50% 0%;
+  transform: rotate(0deg);
+}
+.hour {
+  @include hand(3px, 25%, #FFF);
+}
+.minute {
+  @include hand(2px, 35%, #FFF);
+}
+.second {
+  @include hand(1px, 35%, #FFCD00);
+}
+.second:after {
+  @extend .centered;
+  content: " ";
+  top: -20px;
+  border-left: 5px solid #FFCD00;
+  border-bottom: 15px solid #FFCD00;
+  border-top: 15px solid #FFCD00;
+  border-radius: 25% 25% 0px 0px;
+}
+.dot {
+  @extend .centered;
+  background-color: #000;
+  height: 5px;
+  width: 5px;
+  border: 10px solid #FFCD00;
+  border-radius: 50%;
+}
+.ticks span {
+  $h: 20px;
+  @extend .centered;
+  border-top: 2px solid #fff;
+  width: $h;
+  transform: rotate(0deg);
+  left: calc(50% - #{$h/2});
+  @for $i from 1 through 60 {
+    &:nth-child(#{$i}) {
+      transform: rotate(($i/60) * 360deg) translateX($clockSize/2 - $h);
+      @if $i % 5==0 {
+        border-top-width: 5px;
+        margin-left: -5px;
+        width: 30px;
+      }
+    }
+  }
+}
+@mixin animate-hand($start) {
+  $ratio: $start / 60;
+  $deg: $ratio * 360;
+  $start-deg: $deg - 180 * 1deg;
+  $end-deg: $start-deg + 360;
+  @keyframes animate-hand-#{$start} {
+    from {
+      transform: rotate($start-deg)
+    }
+    to {
+      transform: rotate($end-deg)
+    }
+  }
+}
+@mixin animate-hour-hand($start) {
+  $ratio: $start / 12;
+  $deg: $ratio * 360;
+  $start-deg: $deg - 180 * 1deg;
+  $end-deg: $start-deg + 360;
+  @keyframes animate-hour-hand-#{$start} {
+    from {
+      transform: rotate($start-deg)
+    }
+    to {
+      transform: rotate($end-deg)
+    }
+  }
+}
+@for $i from 0 through 59 {
+  @include animate-hand($i);
+  @include animate-hour-hand($i);
+  .second-#{$i} {
+    animation: animate-hand-#{$i} 60s linear infinite;
+  }
+  .minute-#{$i} {
+    animation: animate-hand-#{$i} 60 * 60s linear infinite;
+  }
+  .hour-#{$i} {
+    animation: animate-hour-hand-#{$i} 60 * 60 * 24s linear infinite;
+  }
+}
